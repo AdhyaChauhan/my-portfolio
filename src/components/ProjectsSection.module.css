@@ -1,0 +1,11 @@
+.projectsGrid {
+  display: grid;
+  /* This is a responsive grid: 
+     - It creates columns that are at least 300px wide
+     - 'auto-fit' means it will fit as many as possible
+     - '1fr' means they will all stretch to be the same size
+  */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+} 

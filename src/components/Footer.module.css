@@ -1,0 +1,15 @@
+.footer {
+bottom: 0;
+    background-color: #20232a;
+    color: #aaa;
+    padding: 2rem 0;
+    /* margin-top: 3rem; */
+    position: absolute;
+    width: 100%;
+}
+
+/* This will center the <p> tag inside the container */
+.footer p {
+  margin: 0;
+  text-align: center;
+}

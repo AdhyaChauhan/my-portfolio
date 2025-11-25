@@ -1,0 +1,39 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* This keeps the image corners rounded */
+  display: flex;
+  flex-direction: column; /* Stacks image, then text */
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lifts the card up a bit */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Makes sure the image covers the area */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cardContent {
+  padding: 1rem 1.25rem;
+}
+
+.cardContent h3 {
+  margin-top: 0;
+  color: #20232a;
+}
+
+.cardContent a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}

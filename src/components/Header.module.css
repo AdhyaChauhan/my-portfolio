@@ -1,0 +1,40 @@
+.header {
+  background-color: #20232a;
+  color: white;
+  padding: 1rem 0; /* Changed padding to vertical only */
+}
+
+/* This new class applies flexbox *to the container* */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  cursor: pointer;
+}
+
+/* Updated link styles to be more specific */
+.header a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header a:hover {
+  color: #61dafb;
+}
