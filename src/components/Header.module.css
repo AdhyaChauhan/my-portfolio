@@ -38,3 +38,20 @@
 .header a:hover {
   color: #61dafb;
 }
+
+
+/* Add this at the bottom */
+.themeBtn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.themeBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

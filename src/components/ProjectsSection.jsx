@@ -4,32 +4,24 @@ import ProjectCard from './ProjectCard';
 import styles from './ProjectsSection.module.css';
 
 function ProjectsSection() {
-  // 1. STATE: The "Memory"
-  // 'projects' will store the list of repos we   from GitHub.
+
   const [projects, setProjects] = useState([]);
   
-  // 'loading' tracks if we are still waiting for the data.
   const [loading, setLoading] = useState(true);
 
-  // 2. EFFECT: The "Trigger"
-  // useEffect runs code AFTER the component renders.
+  
   useEffect(() => {
     
-    // We define the function to get data
     const fetchProjects = async () => {
       try {
-        console.log("Fetching from GitHub..."); // Check your console to see this!
+        console.log("Fetching from GitHub..."); 
         
-        // This is the API Call to your real account
         const response = await fetch('https://api.github.com/users/AdhyaChauhan/repos');
         
-        // Convert the raw response into JSON data we can use
         const data = await response.json();
         
-        // Save the data into our state memory
         setProjects(data);
         
-        // Turn off the loading message
         setLoading(false);
         
       } catch (error) {
@@ -38,12 +30,10 @@ function ProjectsSection() {
       }
     };
 
-    // Run the function we just defined
     fetchProjects();
 
-  }, []); // The empty [] means "Only run this ONE time when the page loads"
+  }, []); 
 
-  // 3. RENDER: The "UI"
   return (
     <section>
       {/* This container div ensures the content is CENTERED */}
